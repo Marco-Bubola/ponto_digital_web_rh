@@ -4,6 +4,7 @@ import { useAuthStore } from '@/stores/authStore';
 import Layout from '@/components/Layout';
 import LoginPage from '@/pages/LoginPage';
 import DashboardPage from '@/pages/DashboardPage';
+import EmpresasPage from '@/pages/EmpresasPage';
 import FuncionariosPage from '@/pages/FuncionariosPage';
 import RelatoriosPage from '@/pages/RelatoriosPage';
 import FaltasPage from '@/pages/FaltasPage';
@@ -28,6 +29,7 @@ const App: React.FC = () => {
           }
         >
           <Route index element={<DashboardPage />} />
+          <Route path="empresas" element={<EmpresasPage />} />
           <Route path="funcionarios" element={<FuncionariosPage />} />
           <Route path="relatorios" element={<RelatoriosPage />} />
           <Route path="faltas" element={<FaltasPage />} />
